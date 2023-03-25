@@ -33,6 +33,16 @@ app.get('/men', (req, res) => {
   })
 })
 
+app.get('/search', (req, res) => {
+  let name = req.query.name
+  let query = "SELECT name,size,price from clothes WHERE name = '" + name + "'"
+  console.log(query)
+  connection.query(query, (err, rows, fields) => {
+    if (err) throw err 
+    res.send(rows)
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server started on port ${port}`)
 })
