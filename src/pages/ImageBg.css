@@ -1,0 +1,32 @@
+.ImageWM {
+    position: absolute;
+    width: 1519px;
+    height: 1200px;
+    left: 0px;
+    top: -89px;
+}
+
+.ImageM {
+    position: absolute;
+    width: 1519px;
+    height: 1200px;
+    left: 0px;
+    top: 45px;
+}
+
+.ImageB {
+    position: absolute;
+    width: 1519px;
+    height: 120px;
+    left: 0px;
+    top: 2400px;
+}
+
+.ImageBw {
+    position: absolute;
+    width: 1519px;
+    height: 120px;
+    left: -48px;
+    top: 1100px;
+}
+

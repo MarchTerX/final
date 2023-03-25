@@ -1,0 +1,63 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gapLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gapRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.InputBox {
+    position: relative;
+    width: 250px;
+}
+
+.InputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(56, 55, 55, 0.25);
+    background: #ededed;
+    border-radius: 5px;
+    outline: none;
+    color: #434343;
+    font-size: 1em;
+}
+
+.InputBox span {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(56, 55, 55, 0.5);
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+.InputBox input:valid ~ span,
+.InputBox input:focus ~ span
+{
+    color: #282828;
+    transform: translateX(10px) translateY(-16px);
+    font-size: 0.65em;
+    padding: 0.10px;
+    background: #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    letter-spacing: 0.2em;
+}
